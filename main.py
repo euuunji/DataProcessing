@@ -2,7 +2,6 @@ import requests
 import change
 from bs4 import BeautifulSoup
 
-
 def getUrl(input, titles) :
     response = requests.get(input)
 
@@ -50,4 +49,4 @@ if __name__ == '__main__':
     getUrl(total_url, titles)   # 전체 스크립트 URL 가져오기
     getScripts(titles)    # 스크립트 본문 가져오기
     change.modifyScripts()     # 스크립트 전처리
-    #change.attachTag() # 정제된 스크립트에 tag 부착
+    #hange.attachTag() # 정제된 스크립트에 tag 부착
